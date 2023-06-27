@@ -21,7 +21,7 @@ const TrainTableSpeedLimit: FC<ITrainTableSpeedLimit> = ({ speed, onDataChange, 
       <td>
         <input
           type="number"
-          value={speedData}
+          value={speed.speedLimit}
           onChange={(event) => handleChangeInput(event.target.value)}
         />
       </td>
