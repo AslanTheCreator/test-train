@@ -8,11 +8,8 @@ interface ITrainTableSpeedLimit {
 }
 
 const TrainTableSpeedLimit: FC<ITrainTableSpeedLimit> = ({ speed, onDataChange, index }) => {
-  const [speedData, setSpeedData] = useState(speed.speedLimit);
-
   const handleChangeInput = (value: string) => {
     const valueNumber = Number(value);
-    setSpeedData(valueNumber);
     onDataChange(valueNumber, index);
   };
   return (
